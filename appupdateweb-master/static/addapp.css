@@ -1,0 +1,168 @@
+body{
+    background-size:cover;
+    background: #CCCCCC url(./bg.png) no-repeat fixed center center;
+    
+    justify-content:center;
+    min-height: 100vh;
+    display: flex;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:  "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.p1t{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin-top: 2%; margin-left: 2%;
+}
+
+.container{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 43%;
+    padding: 40px;
+    background:#151515;
+    font-size: 16px;
+}
+.container h2{
+    color: #999;
+    margin-bottom: 45px;
+
+}
+.input-field{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 28px;
+
+}
+.input-field input[type="text"]{
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+}
+
+
+.input-field label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #555;
+    pointer-events: none;
+    display: block;
+    transition: 0.5s;
+}
+.shuru:focus + label
+{
+    transform: translateY(-35px);
+    font-size: 14px;
+    color: #fff;
+    background: #ff006a;
+    padding: 2px 6px;
+
+}
+.shuru:valid + label{
+    transform: translateY(-35px);
+    font-size: 14px;
+    color: #fff;
+    background: #ff006a;
+    padding: 2px 6px;
+}
+.input-field span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #555;
+    width: 100%;
+    height: 2px;
+
+}
+.input-field span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00b0ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+
+}
+.shuru:focus ~ span:before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+
+}
+.shuru:valid ~ span:before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+
+}
+.btn{
+    margin:20px 10px 0 80% ;
+    border: none;
+    box-shadow: none;
+    padding: 10px 25px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #00bcd4;
+
+}
+
+#LOG{
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+    background-repeat: no-repeat;
+    background-color: rgb(81, 82, 83);
+    color:white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #333333;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+}

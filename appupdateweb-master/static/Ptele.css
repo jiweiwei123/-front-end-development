@@ -1,0 +1,71 @@
+.p1t{
+    font-family: 方正等线 ,sans-serif;
+    font-size: 1.5em;
+    color: snow;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.projects {
+    align-items: center;
+}
+.p1{
+    background-size:cover;
+    background: #CCCCCC url(./bg.png) no-repeat fixed center center;
+}
+.projects div{
+    /*鼠标样式*/
+    cursor:pointer;
+    position: relative;
+    font-size: 1em;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: #f0ebeb;
+    width: 160px;
+    height: 85px;
+    float: left;
+    margin: 3% 1.8% 0 1.8%;
+    text-align: center;
+    vertical-align:middle;
+    /*添加动画*/
+    animation: topIn  1s ease;
+    /*颜色填充*/
+    box-shadow: 0 0 0 45px rgb(87, 95, 207) inset;
+    /*圆角*/
+    border-radius:10px;
+    /*所有动画效果渐变*/
+    transition: all 0.3s linear;
+}
+
+.projects{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+}
+#news{
+    margin: 0;
+    width: 100%;
+    /*位于div的底部*/
+    position: absolute;
+    bottom: 10px;
+}
+#nameid{
+    margin: 0;
+    width: 100%;
+    font-size: 1.4em;
+    /*距顶部5px*/
+    position: absolute;
+    top:5px;
+}
+/*出现动画*/
+@keyframes topIn {
+    from { transform: translateY(50px) ;
+        opacity: 0; }
+    to { transform: translateY(0px);
+        opacity: 1;}
+}
+#addbutton{
+    font-size: 1.5em;
+    text-align: center;   /*垂直居中*/
+    line-height: 85px;
+}
+

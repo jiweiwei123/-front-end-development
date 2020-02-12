@@ -1,0 +1,114 @@
+body{
+    background-size:cover;
+    background: #CCCCCC url(./bg.png) no-repeat fixed center center;}
+
+
+.ves_container{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: white;
+    width: 80%;
+    margin: 4% 10% 0 10%;
+    
+    box-sizing: border-box ;
+    position: absolute;
+    
+}
+.ves_left{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    opacity: 1;
+    float: left;
+    font-size: 1.8em;
+    position:fixed;
+}
+
+.ves_pn{
+    margin:0  0 15px 5px;
+}
+
+.ves_right{
+    opacity: 1;
+    border-left: 4px solid black;
+    margin-left: 30%;
+    overflow-y:auto
+
+}
+.ves_div{
+    font-size: 1.3em;
+    border: solid 2px salmon ;
+    margin:5px 3px;
+    border-radius: 8px;
+    padding: 30px 50px;
+}
+.ves_div p{
+    margin: 7px 0 10px 20px;
+
+}
+
+
+.add-button{
+    background-color:aqua ;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 0.7em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.add-button{  
+    background-color: rgb(52, 152, 219);
+    color: white; 
+    border: 2px solid white;    
+
+}
+.add-button:hover{
+    background-color: white;
+    color: rgb(52, 152, 219);
+}
+.dele{
+    border: solid 2px rgb(52, 152, 219);
+    color: white;
+    background-color: rgb(219, 74, 74);
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 10px 0 10px 20px;
+    padding: 5px 5px;
+}
+.dele:hover{
+    background-color: white;
+    color: rgb(219, 52, 52);
+}
+.dload{
+    border: solid 2px rgb(52, 152, 219);
+    color: white;
+    background-color: rgb(79, 219, 74);
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 10px 0 10px 20px;
+    padding: 5px 5px;
+}
+.dload:hover{
+    background-color: white;
+    color: rgb(66, 219, 52);
+}
+.p1t{
+    font-family: 方正等线 ,sans-serif;
+    font-size: 1.5em;
+    color: snow;
+    margin-left: 2%;
+    position:fixed;
+   
+}

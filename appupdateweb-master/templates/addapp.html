@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+        id="viewport" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../static/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../static/ajaxFileUpload.js"></script>
+    <script type="text/javascript" src="../static/addapp.js"></script>
+    <link rel="stylesheet" href="../static/addapp.css" type="text/css" />
+</head>
+
+<body>
+    <div class="p1t">
+        <a href="index.html" style="text-decoration: none;color: white ;font-size: 1.5em; ">弘恩科技软件管理平台</a>
+    </div>
+    <div class="container">
+        <h2>软件上传</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="input-field">
+                <input class="shuru" id="PN" type="text" name="" required="">
+                <label>请输入产品名称</label>
+                <span></span>
+            </div>
+            <div class="input-field">
+                <input class="shuru" id="VE" type="text" name="" required="">
+                <label>请输入软件版本号</label>
+                <span></span>
+            </div>
+            <p style="margin-top: 5px;">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="LOG""
+                    placeholder="更新日志"></textarea>
+            </p>
+            <div class="file" id="file1">
+                <input type="file" name="app"id="app" >
+                <div class="fileerrorTip1">请选择apk文件</div>
+                <div class="showFileName1"></div>
+             </div>
+             <div>
+                <input type="button" class="btn" value="上传" onclick="upload()" />
+
+             </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
